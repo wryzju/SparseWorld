@@ -245,15 +245,27 @@
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous Authors</a>,</span> -->
-                <a>Anonymous Authors</a>,</span>
-                <!-- <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span> -->
+              <span class="author-block">
+                Ruoyu Wang</a><sup>1,*</sup>,</span>
+              <span class="author-block">
+                Jingke Wang</a><sup>1,*</sup>,</span>
+              <span class="author-block">
+                Yukai Ma</a><sup>1,&dagger;</sup>,</span>
+              <span class="author-block">
+                Yuehao Huang</a><sup>1,*</sup>,</span>
+              <span class="author-block">
+                Shuangming Lei</a><sup>1,*</sup>,</span>
+              <span class="author-block">
+                Guanglin Xu</a><sup>2</sup>,</span>
+              <span class="author-block">
+                Aixue Ye</a><sup>2</sup>,</span>
+              <span class="author-block">
+                Yong Liu</a><sup>1,&ddagger;</sup>,</span>
                   </div>
-
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup> Zhejiang University, <sup>2</sup> 2012 Labs, Huawei<br>Accepted at IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026)</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, <sup>&dagger;</sup>Project Leader, <sup>&ddagger;</sup>Corresponding Author</small></span>
+            </div>
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
                     <!-- <span class="author-block">Institution Name<br>Conference name and year</span> -->
@@ -263,16 +275,16 @@
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID
+                         <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2605.24354.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span> -->
+                    </span>
 
                     <!-- TODO: Add your supplementary material PDF or remove this section -->
                     <span class="link-block">
@@ -297,13 +309,13 @@
                 </span> -->
 
                 <!-- TODO: Update with your arXiv paper ID -->
-                <!-- <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2605.24354" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span> -->
+                  <span>arXiv</span>
                 </a>
               </span>
             </div>
@@ -314,6 +326,20 @@
   </div>
 </section>
 
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <img src="static/images/teaser.png" alt="Teaser Image" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+      
+      <h2 class="subtitle has-text-centered mt-4">
+        SparseWorld in Action: Generates only agents and map layouts, improving efficiency while enhancing end-to-end planning.
+      </h2>
+      
+    </div>
+  </div>
+</section>
 
 <!-- Teaser video-->
 <section class="hero teaser">
@@ -352,47 +378,111 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<!-- <section class="hero is-small"> -->
-  <!-- <div class="hero-body"> -->
-    <!-- <div class="container"> -->
-      <!-- <div id="results-carousel" class="carousel results-carousel"> -->
-       <!-- <div class="item"> -->
-        <!-- TODO: Replace with your research result images -->
-        <!-- <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/> -->
-        <!-- TODO: Replace with description of this result -->
-        <!-- <h2 class="subtitle has-text-centered"> -->
-          <!-- First image description. -->
-        <!-- </h2> -->
-      <!-- </div> -->
-      <!-- <div class="item"> -->
-        <!-- Your image here -->
-        <!-- <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/> -->
-        <!-- <h2 class="subtitle has-text-centered"> -->
-          <!-- Second image description. -->
-        <!-- </h2> -->
-      <!-- </div> -->
-      <!-- <div class="item"> -->
-        <!-- Your image here -->
-        <!-- <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/> -->
-        <!-- <h2 class="subtitle has-text-centered"> -->
-          <!-- Third image description. -->
-        <!-- </h2> -->
-     <!-- </div> -->
-     <!-- <div class="item"> -->
-      <!-- Your image here -->
-      <!-- <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/> -->
-      <!-- <h2 class="subtitle has-text-centered"> -->
-        <!-- Fourth image description. -->
-      <!-- </h2> -->
-    <!-- </div> -->
-  <!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- </section> -->
-<!-- End image carousel -->
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body"  style="padding-bottom: 0;">
+    <div class="container">
+      <h2 class="title is-3">Methodology</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+        <img src="static/images/method.png" alt="Second quantitative result visualization" loading="lazy" style="width: 100%; height: auto; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          <b>The SparseWorld framework operates in three sequential stages.</b> (a) Instance-Aware End-to-End Driving Baseline, (b) Future Forecasting with Sparse Dreamer and (c) Motion Planning Refinement.
+        </h2>
+        </div>
+        <div class="item item-video2">
+        <img src="static/images/sparsedreamer.png" alt="Second quantitative result visualization" loading="lazy" style="width: 60%; height: auto; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          <b> Detailed structure of the Sparse Dreamer</b>, which predicts the subsequent frame’s instance in an autoregressive manner, based on historical instances and expected action conditions.
+        </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body"  style="padding-bottom: 0;">
+    <div class="container">
+      <h2 class="title is-3">Quantitative Results</h2>
+      <div id="quantitative-results" class="results-carousel">
+        <div class="item">
+        <img src="static/images/exp.png" alt="Second quantitative result visualization" loading="lazy" style="width: 100%; height: auto; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          <b>Quantitative results</b> for future instance forecasting, motion prediction, and trajectory planning tasks.
+        </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body"  style="padding-bottom: 0;">
+    <div class="container">
+      <h2 class="title is-3">Future Forecasting Visualization</h2>
+      <div id="quantitative-results" class="results-carousel">
+        <div class="item">
+        <img src="static/images/Sparseworld-visualize-resize-1106-1045.png" alt="Second quantitative result visualization" loading="lazy" style="width: 100%; height: auto; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          <b>Qualitative results</b> of future instance forecasting. The results are presented at various future timestamps.
+        </h2>
+        </div>
+      </div>
+      <div id="quantitative-results" class="results-carousel">
+        <div class="item">
+        <img src="static/images/future_forecasting_vis.png" alt="Second quantitative result visualization" loading="lazy" style="width: 100%; height: auto; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          <b>Qualitative results</b> of future instance forecasting under various weather and command conditions.
+        </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
 
 
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body"  style="padding-bottom: 0;">
+    <div class="container">
+      <h2 class="title is-3">Motion Prediction Refinement Visualization</h2>
+      <div id="quantitative-results" class="results-carousel">
+        <div class="item">
+        <img src="static/images/motion_vis.png" alt="Second quantitative result visualization" loading="lazy" style="width: 100%; height: auto; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          <b>Qualitative results of motion prediction refinement on the nuScenes validation set.</b> We visualize the most confident trajectory among the six predicted ones. The baseline result from SparseDrive is marked in orange, the refined result from SparseWorld-S is shown in purple, and the ground truth is indicated in black.
+        </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body"  style="padding-bottom: 0;">
+    <div class="container">
+      <h2 class="title is-3">Trajectory Planning Refinement Visualization</h2>
+      <div id="quantitative-results" class="results-carousel">
+        <div class="item">
+        <img src="static/images/planning_vis.png" alt="Second quantitative result visualization" loading="lazy" style="width: 100%; height: auto; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          <b>Qualitative results of trajectory planning refinement on the nuScenes validation set</b>, when a potential collision is detected, SparseWorld selects the safest trajectory among all candidates for execution. 
+        </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
@@ -405,14 +495,12 @@
         </button>
       </div>
       <pre id="bibtex-code"><code>
-        <!-- @article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-  } -->
-  TODO
+@article{wang2026sparseworld,
+  title={SparseWorld: Enhancing End-to-End Autonomous Driving via World Models with Sparse Scene Representation},
+  author={Wang, Ruoyu and Wang, Jingke and Ma, Yukai and Huang, Yuehao and Lei, Shuangming and Xu, Guanglin and Ye, Aixue and Liu, Yong},
+  journal={arXiv preprint arXiv:2605.24354},
+  year={2026}
+}
 </code></pre>
     </div>
 </section>
